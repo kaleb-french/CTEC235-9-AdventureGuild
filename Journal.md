@@ -12,3 +12,7 @@ context.read allows accesing the context of the model without subscribing to cha
 
 Phase 4-
 The button references the partyModel through context.read() that includes its method being called which is addAdventurer, this method takes in the "hero" in the listView in guild hall and passes it in as the Adventurer parameter, which adds the Adventurer to the QuestSummaryParty List and the Consumer in this widget forces update of the Text fields when the notifyListeners is called.
+
+
+Phase 5-
+Tested adding and removing party members and made sure updates happened properly. Noticed that if I add members to the party more than fits on the screen the two panels in the over and under view scroll indepentantly, thats cool.
