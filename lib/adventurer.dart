@@ -13,7 +13,7 @@ class Adventurer {
 class PartyModel extends ChangeNotifier {
   //f
   List<Adventurer> _party = [];
-  List<Adventurer> get party => _party;
+  List<Adventurer> get party => List.unmodifiable(_party);
   int get partyCount => _party.length;
   int get totalCost{
     int cost = 0;

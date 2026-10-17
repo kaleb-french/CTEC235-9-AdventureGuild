@@ -1,7 +1,9 @@
+import 'package:ctec235_9_adventureguild/party.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'adventurer.dart';
 import 'guild_roster.dart';
+import 'party.dart';
 
 void main() {
   runApp(
@@ -38,8 +40,14 @@ class Main extends StatelessWidget{
         title:  Text("Guild Hall"),
         centerTitle: true,
       ),
-      body: GuilHallRoster(),
+      body: Center(
+            child: Column(
+              children: [
+                Expanded(child: GuilHallRoster()),
+                Expanded(child: QuestPartySummary()),
+        ],
+      ),
+      ),
     );
   }
-
 }

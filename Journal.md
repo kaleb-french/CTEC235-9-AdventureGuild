@@ -9,3 +9,6 @@ The ChangeNotifer is placed at the top of the stack so it can be accessed anywhe
 
 Phase 3-
 context.read allows accesing the context of the model without subscribing to changes while watch acesses the context and watches for changes which will rebuild the wigets involved, if this is not the disired outcome read allows for reading the context without acting on changes that are notified.
+
+Phase 4-
+The button references the partyModel through context.read() that includes its method being called which is addAdventurer, this method takes in the "hero" in the listView in guild hall and passes it in as the Adventurer parameter, which adds the Adventurer to the QuestSummaryParty List and the Consumer in this widget forces update of the Text fields when the notifyListeners is called.
