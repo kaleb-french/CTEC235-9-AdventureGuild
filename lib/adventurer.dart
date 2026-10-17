@@ -7,7 +7,7 @@ class Adventurer {
   String role;
   int goldCost;
   //c
-  Adventurer(this.name,this.role,this.goldCost);
+  Adventurer({required this.name, required this.role, required this.goldCost});
 }
 
 class PartyModel extends ChangeNotifier {

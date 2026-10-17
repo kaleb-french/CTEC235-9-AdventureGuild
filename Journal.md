@@ -6,3 +6,6 @@ I created an Adventurer class to hold party members created to fill the partyMod
 
 Phase 2-
 The ChangeNotifer is placed at the top of the stack so it can be accessed anywhere inside the wiget tree, including across mulitple screens.
+
+Phase 3-
+context.read allows accesing the context of the model without subscribing to changes while watch acesses the context and watches for changes which will rebuild the wigets involved, if this is not the disired outcome read allows for reading the context without acting on changes that are notified.
